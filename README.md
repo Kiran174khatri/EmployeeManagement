@@ -54,12 +54,12 @@ spring:
 - ⁠Step 2: Run the Spring Boot application
 - ⁠Step 3: Enable Liquibase to insert default users
 
-⁠```bash
+```bash
 spring:
   liquibase:
-    enabled: true  
+    enabled: true 
 ```
-```
+
 - Step 4: Re-run the Spring Boot Application
 
 ---
