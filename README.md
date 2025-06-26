@@ -1,6 +1,6 @@
 #  Employee Management System - Spring Boot Project
 
-This is a secure **Employee Management System** built with **Spring Boot**, using **JWT for authentication**, **Role-based access control**, **PostgreSQL** for the database, and **Flyway** for database versioning. It also includes a fully functional **Swagger UI** and a **Postman collection** for easy API testing.
+This is a secure **Employee Management System** built with **Spring Boot**, using **JWT for authentication**, **Role-based access control**, **PostgreSQL** for the database, and **Liquibase** for database insertion. It also includes a fully functional **Swagger UI** and a **Postman collection** for easy API testing.
 
 ---
 
@@ -47,11 +47,18 @@ spring:
 
 ```
 ---
-### 4. Flyway Migration
-- Flyway automatically runs migration scripts from src/main/resources/db/migration/ during startup.
+### 4. Liquibase 
+•⁠  ⁠Liquibase allows us to manage database changes such as inserting default records (e.g., admin/user) without manually    running SQL files every time.
 
-- File: V1__create_roles_users_employees.sql
-
+•⁠  ⁠Step 1: Keep Liquibase disabled for the first run
+•⁠  ⁠Step 2: Run the Spring Boot application
+•⁠  ⁠Step 3: Enable Liquibase to insert default users
+⁠ bash
+spring:
+  liquibase:
+    enabled: true  
+ ⁠
+•⁠  ⁠Step 4: Re-run the Spring Boot Application
 ---
 
 
