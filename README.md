@@ -48,17 +48,17 @@ spring:
 ```
 ---
 ### 4. Liquibase 
-•⁠  ⁠Liquibase allows us to manage database changes such as inserting default records (e.g., admin/user) without manually    running SQL files every time.
+⁠Liquibase allows us to manage database changes such as inserting default records (e.g., admin/user) without manually    running SQL files every time.
 
-•⁠  ⁠Step 1: Keep Liquibase disabled for the first run
-•⁠  ⁠Step 2: Run the Spring Boot application
-•⁠  ⁠Step 3: Enable Liquibase to insert default users
-⁠ bash
+- Step 1: Keep Liquibase disabled for the first run
+- ⁠Step 2: Run the Spring Boot application
+- ⁠Step 3: Enable Liquibase to insert default users
+⁠```bash
 spring:
   liquibase:
     enabled: true  
- ⁠
-•⁠  ⁠Step 4: Re-run the Spring Boot Application
+```
+- Step 4: Re-run the Spring Boot Application
 ---
 
 
