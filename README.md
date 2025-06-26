@@ -9,7 +9,7 @@ This is a secure **Employee Management System** built with **Spring Boot**, usin
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/employee_management.git
+git clone https://github.com/Kiran174khatri/EmployeeManagement.git
 cd employee_management
 ```
 ---
