@@ -1,6 +1,6 @@
 #  Employee Management System - Spring Boot Project
 
-This is a secure **Employee Management System** built with **Spring Boot**, using **JWT for authentication**, **Role-based access control**, **PostgreSQL** for the database, and **Liquibase** for database insertion. It also includes a fully functional **Swagger UI** and a **Postman collection** for easy API testing.
+This is a secure **Employee Management System** built with **Spring Boot**, using **JWT for authentication**, **Role-based access control**, **MySQL** for the database, and **Liquibase** for database insertion. It also includes a fully functional **Swagger UI** and a **Postman collection** for easy API testing.
 
 ---
 
@@ -29,7 +29,7 @@ employee_management/
 ### 2. Set Up PostgreSQL
 - Create a database manually named: **employeeskiran**
 
-- Make sure your DB is running on default port 5432
+- Make sure your DB is running on default port 3306
 
 ```bash
 CREATE DATABASE employeeskiran;
@@ -42,7 +42,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/employeeskiran
     username: root
-    password: your_password
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 ```
