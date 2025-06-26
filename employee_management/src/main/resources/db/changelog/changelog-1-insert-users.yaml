@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-default-users
+      author: kiran
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: password
+                  value: $2a$10$irNLsHGaF79DgsjQLDKOneX62z5144PDTak/V9/MEIJeqAhvzvUkO
+              - column:
+                  name: role
+                  value: ADMIN
+
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: username
+                  value: user
+              - column:
+                  name: password
+                  value: $2a$10$lo76PrjzGHes7tSbu/9yMOMoLQMo2ga4tpMOxgMzKQw2lEPHb8LzK
+              - column:
+                  name: role
+                  value: USER
