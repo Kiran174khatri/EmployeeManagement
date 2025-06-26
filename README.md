@@ -90,6 +90,30 @@ http://localhost:8080/swagger-ui.html
 ```
 
 ---
+### To generate the token
+Open **POSTMAN**
+- Login Endpoint
+- URL: /auth/login
+- Method: POST
+- Content-Type: application/json
+
+For Admin
+```bash
+{
+  "username": "admin",
+  "password": "admin123"
+}
+```
+For User
+```bash
+{
+  "username": "user",
+  "password": "user123"
+}
+```
+You will get token in response.
+
+---
 ## API Endpoints
 
 
