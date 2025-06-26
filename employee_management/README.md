@@ -9,7 +9,7 @@ This is a secure **Employee Management System** built with **Spring Boot**, usin
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/employee_management.git
+git clone https://github.com/Kiran174khatri/EmployeeManagement.git
 cd employee_management
 ```
 ---
@@ -88,6 +88,30 @@ You can Authorize using the JWT token here.
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
+
+---
+### To generate the token
+Open **POSTMAN**
+- Login Endpoint
+- URL: /auth/login
+- Method: POST
+- Content-Type: application/json
+
+For Admin
+```bash
+{
+  "username": "admin",
+  "password": "admin123"
+}
+```
+For User
+```bash
+{
+  "username": "user",
+  "password": "user123"
+}
+```
+You will get token in response.
 
 ---
 ## API Endpoints
